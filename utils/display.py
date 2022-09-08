@@ -3,8 +3,7 @@ from pandas.io.formats.style import Styler
 
 
 def to_percentage(df: pd.DataFrame) -> Styler:
-    total = df.sum().sum()
-    return df.div(total).mul(100).round(1).style.format("{}%")
+    return df.apply(lambda col: col / col.sum()).mul(100).round(1).style.format("{}%")
 
 
 def highlight_small_p(styler: Styler) -> Styler:
