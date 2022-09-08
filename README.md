@@ -1,6 +1,6 @@
 # MIMIC IV Data Analysis 
 
-For introduction, see live demo.
+For information, see [live demo](https://sunrimii-mimic-iv-data-analysis-0--introduction-yx89v6.streamlitapp.com/).
 
 ## Run
 
